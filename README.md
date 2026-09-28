@@ -1,6 +1,6 @@
 # Finanças App
 
-App de controle financeiro (spec do Gabriel Ferreira, v1.0 — `docs/` futuramente) com
+App de controle financeiro com
 multiusuário por empresa (proprietário/membro), API Fastify + Drizzle + Postgres RLS,
 front React (a portar do protótipo) e conector MCP para lançamentos via Claude Code.
 
