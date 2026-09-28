@@ -53,3 +53,7 @@ After changing `src/db/schema.ts`: `pnpm --filter @financas/api db:push && pnpm 
 - `apps/web` (port the `prototipo-financas_5.html` prototype).
 - `apps/mcp` (Claude Code connector: entries, OFX, queries).
 - Automatic invoice closing via a job (today the effective status is derived from the date), "check the amount" alerts (RN-18) as notifications, deletion/archiving following the rules in section 4.7.
+
+## License
+
+Proprietary — all rights reserved. This code is public for portfolio purposes only; no permission is granted to use, copy, modify or distribute it. See [LICENSE](LICENSE).
