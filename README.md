@@ -48,10 +48,6 @@ After changing `src/db/schema.ts`: `pnpm --filter @financas/api db:push && pnpm 
 
 **Tests**: `npx tsx src/scripts/aceite.ts` runs the spec's 6 acceptance criteria against the local API (all passing).
 
-## Production
-
-`https://cofre.grupomultiluz.com.br` (VPS multiluz9, aaPanel): pm2 `cofre-api` :3401, docker `cofre-db` :5437, nginx `/api/` → API, `/app/` blocked, Let's Encrypt SSL. Redeploy: rsync + `pnpm db:push && pnpm db:rls` + `pm2 restart cofre-api`.
-
 ## Pending (next sessions)
 
 - `apps/web` (port the `prototipo-financas_5.html` prototype).
