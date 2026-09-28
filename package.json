@@ -1,0 +1,13 @@
+{
+  "name": "financas-app",
+  "private": true,
+  "packageManager": "pnpm@10.33.0",
+  "engines": { "node": ">= 20" },
+  "scripts": {
+    "dev:api": "pnpm --filter @financas/api dev",
+    "db:up": "docker compose up -d",
+    "db:down": "docker compose down",
+    "db:setup": "pnpm --filter @financas/api db:push && pnpm --filter @financas/api db:rls && pnpm --filter @financas/api db:seed",
+    "typecheck": "pnpm -r typecheck"
+  }
+}

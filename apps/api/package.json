@@ -1,0 +1,36 @@
+{
+  "name": "@financas/api",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "start": "tsx src/index.ts",
+    "typecheck": "tsc --noEmit",
+    "db:push": "drizzle-kit push --force",
+    "db:generate": "drizzle-kit generate",
+    "db:rls": "tsx src/db/apply-rls.ts",
+    "db:seed": "tsx src/seed.ts"
+  },
+  "dependencies": {
+    "@fastify/cors": "^10.0.1",
+    "@fastify/jwt": "^9.0.3",
+    "@fastify/rate-limit": "^10.3.0",
+    "@fastify/sensible": "^6.0.2",
+    "@financas/shared": "workspace:*",
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "dotenv": "^16.4.7",
+    "drizzle-orm": "^0.38.3",
+    "fastify": "^5.2.0",
+    "fastify-plugin": "^5.0.1",
+    "pino-pretty": "^13.0.0",
+    "postgres": "^3.4.5",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "drizzle-kit": "^0.30.1",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
